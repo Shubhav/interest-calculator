@@ -1,0 +1,25 @@
+{% include "header.html" %}
+<html>
+	<head>
+		<title>
+		Welcome To Interest Calculator
+		</title>
+		<link  type="text/css" rel="stylesheet" href="/static/css/bootstrap.css"  media="all">
+		<script type="text/javascript" src="/static/js/jquery.js"></script>
+		<script src="/static/js/bootstrap.js" charset="utf-8"></script>		
+	</head>
+	
+	<body>
+		<div class="jumbotron">
+			<div class="container">
+				<h2><b>Welcome To Interest Calculator</b></h2>
+			</div>
+		</div>
+		<div class= "container">
+			<div class="col-md-4">
+				<a href="{{ url_for('si') }}" class="btn btn-primary btn-lg btn-block">Simple Interest</a>
+				<a href="{{ url_for('ci') }}" class="btn btn-primary btn-lg btn-block">Compound Interest</a>
+			</div>
+		</div>
+	<body>
+</html>

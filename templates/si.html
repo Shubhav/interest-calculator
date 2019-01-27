@@ -1,0 +1,37 @@
+{% include "header.html" %}
+<html>
+	<head>
+		<title>
+		Simple Interest
+		</title>
+		<link  type="text/css" rel="stylesheet" href="/static/css/bootstrap.css"  media="all">
+		<script type="text/javascript" src="/static/js/jquery.js"></script>
+		<script src="/static/js/bootstrap.js" charset="utf-8"></script>				
+	</head>
+	
+	<body>
+		<div class="jumbotron">
+			<div class="container">
+				<h2><b>Simple Interest Calculator</b></h2>
+			</div>
+		</div>
+		<div class = "container">
+			<div class="col-md-4">
+				<div class="form-group">
+					<form method='post' action = '/calculatesi'>
+						<b>Amount</b>
+						<input type = 'text' name='amount' class="form-control"/><br>
+						<b>Years</b>
+						<input type = 'text' name='years' class="form-control"/><br>
+						<b>Rate</b>
+						<input type = 'text' name='rate' class="form-control""/><br>
+						<button type = 'Submit' class="btn btn-success">Calculate</button>
+					</form>	
+				</div>
+			</div>
+		</div>
+	<body>
+</html>
+
+
+				

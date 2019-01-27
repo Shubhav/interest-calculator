@@ -1,0 +1,26 @@
+{% include "header.html" %}
+<html>
+	<head>
+		<title>
+		CI Result
+		</title>
+		<link  type="text/css" rel="stylesheet" href="/static/css/bootstrap.css"  media="all">
+		<script type="text/javascript" src="/static/js/jquery.js"></script>
+		<script src="/static/js/bootstrap.js" charset="utf-8"></script>		
+	</head>
+	
+	<body>
+		<div class="jumbotron">
+			<div class="container">
+				<h2><b>Compound Interest Calculator</b></h2>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="col-md-4">
+			<h3>Principal : {{p}} <br> Rate : {{r}}% <br> Compounded : {{n}} times a year <br>Interest : {{ci}}<br>Maturity Amount : {{amount}}<br></h3>
+			<a href="{{ url_for('ci') }}" class="btn btn-primary btn-lg btn-block">Calculate CI Again</a>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,26 @@
+{% include "header.html" %}
+<html>
+	<head>
+		<title>
+		SI Result
+		</title>
+		<link  type="text/css" rel="stylesheet" href="/static/css/bootstrap.css"  media="all">
+		<script type="text/javascript" src="/static/js/jquery.js"></script>
+		<script src="/static/js/bootstrap.js" charset="utf-8"></script>		
+	</head>
+	
+	<body>
+		<div class="jumbotron">
+			<div class="container">
+				<h2><b>Simple Interest Calculator</b></h2>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="col-md-4">
+			<h3>Sip Amount per month : {{p}} <br> Rate : {{r}}% <br> Interest : {{i}}<br>Maturity Amount : {{amount}}</h3>
+			<a href="{{ url_for('si') }}" class="btn btn-primary btn-lg btn-block">Calculate SI Again</a>
+			</div>
+		</div>
+	</body>
+</html>
