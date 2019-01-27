@@ -41,6 +41,9 @@ def calculateci():
 	amount = p*(pow((1+(r/(100*n))),n*t))
 	ci=amount-p
 	return render_template('ciresult.html',p=p,t=t,r=r,ci=ci,amount=amount,n=n)
+	
+if __name__ == "__main__":
+	app.run(debug=True)
 
 '''	
 if __name__ == '__main__':
