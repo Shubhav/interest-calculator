@@ -1,7 +1,7 @@
-from flask import Flask, request, render_template, redirect, url_for,os
+from flask import Flask, request, render_template, redirect, url_for
 
 app = Flask(__name__)
-port = int(os.environ.get('PORT', 5000))
+
 @app.route('/')
 def index():
 	return render_template('index.html')
