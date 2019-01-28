@@ -3,10 +3,7 @@
 	<head>
 		<title>
 		Simple Interest
-		</title>
-		<link  type="text/css" rel="stylesheet" href="/static/css/bootstrap.css"  media="all">
-		<script type="text/javascript" src="/static/js/jquery.js"></script>
-		<script src="/static/js/bootstrap.js" charset="utf-8"></script>				
+		</title>			
 	</head>
 	
 	<body>
@@ -20,11 +17,11 @@
 				<div class="form-group">
 					<form method='post' action = '/calculatesi'>
 						<b>Amount</b>
-						<input type = 'text' name='amount' class="form-control"/><br>
+						<input type = 'number' name='amount' class="form-control" required/><br>
 						<b>Years</b>
-						<input type = 'text' name='years' class="form-control"/><br>
+						<input type = 'number' name='years' class="form-control" required/><br>
 						<b>Rate</b>
-						<input type = 'text' name='rate' class="form-control""/><br>
+						<input type = 'number' name='rate' class="form-control" required/><br>
 						<button type = 'Submit' class="btn btn-success">Calculate</button>
 					</form>	
 				</div>

@@ -40,11 +40,13 @@ def calculateci():
 	amount=int(p*(pow((1+(r/(100*n))),n*t)))
 	ci=int(amount-p)
 	return render_template('ciresult.html',p=p,t=t,r=r,n=n,ci=ci,amount=amount)
-
+'''For Heroku'''
 if __name__ == "__main__":
 	app.run(debug=True)
 
-'''	
+
+'''For Localhost'''
+'''
 if __name__ == '__main__':
 	app.run(port=5000, host='localhost', debug=True)
 '''
