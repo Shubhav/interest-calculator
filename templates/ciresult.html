@@ -15,12 +15,41 @@
 				<h2><b>Compound Interest Calculator</b></h2>
 			</div>
 		</div>
-
 		<div class="container">
-			<div class="col-md-4">
-			<h3>Principal : {{p}} <br> Rate : {{r}}% <br> Compounded : {{n}} times a year <br>Interest : {{ci}}<br>Maturity Amount : {{amount}}<br></h3>
+		<div class="col-md-8">
+			<table class="table table-hover">
+				<tbody>
+					<tr>
+					  <th colspan="2" class="bg-danger">Investment Summary</th>  
+					</tr>
+					<tr>
+					  <th class="bg-success">Amount Invested</th>
+					  <td class="table-warning">{{p}}</td>	  
+					</tr>
+					<tr>
+					  <th class="bg-success">Rate of Interest</th>
+					  <td class="table-warning">{{r}}</td>	  
+					</tr>
+					<tr>
+					  <th class="bg-success">No. of Years</th>
+					  <td class="table-warning">{{t}}</td>	  
+					</tr>
+					<tr>
+					  <th class="bg-success">Compounded</th>
+					  <td class="table-warning">{{n}} Times per Year</td>	  
+					</tr>
+					<tr>
+					  <th class="bg-success">Interest Earned</th>
+					  <td class="table-warning">{{ci}}</td>	  
+					</tr>
+					<tr>
+					  <th class="bg-success">Maturity Amount</th>
+					  <td class="table-warning">{{amount}}</td>	  
+					</tr>					
+				</tbody>
+			</table>
 			<a href="{{ url_for('ci') }}" class="btn btn-primary btn-lg btn-block">Calculate CI Again</a>
-			</div>
+		</div>
 		</div>
 	</body>
 </html>
